@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "../../esp32-a2dp-sink"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../esp-now-audio-source"
+		},
+		{
+			"path": "C:/Users/ngocv/AppData/Local/Programs/Karaoke Audio/resources/app/public"
+		},
+		{
+			"path": "../../Bluetooth Project/esp-idf"
+		}
+	],
+	"settings": {
+		"nrf5-vscode.seggerEmbeddedStudioPath": "",
+		"nrf5-vscode.jLinkPath": "C:\\Program Files\\SEGGER\\JLink_V818"
+	}
+}
