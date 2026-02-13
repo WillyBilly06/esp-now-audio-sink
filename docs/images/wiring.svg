@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 500" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="500" rx="12" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="360" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#212529">ESP32 &#x2194; PCM5102A DAC Wiring</text>
+
+  <!-- ESP32 Board -->
+  <rect x="60" y="60" width="240" height="310" rx="10" fill="#1b5e20" filter="url(#shadow)"/>
+  <rect x="68" y="68" width="224" height="294" rx="6" fill="#2e7d32"/>
+  <text x="180" y="100" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">ESP32</text>
+  <text x="180" y="120" text-anchor="middle" font-size="11" fill="#c8e6c9">Dev Board</text>
+
+  <!-- ESP32 Pins -->
+  <rect x="200" y="145" width="90" height="28" rx="4" fill="#1b5e20"/>
+  <text x="245" y="164" text-anchor="middle" font-size="12" fill="#a5d6a7">GPIO 27</text>
+
+  <rect x="200" y="185" width="90" height="28" rx="4" fill="#1b5e20"/>
+  <text x="245" y="204" text-anchor="middle" font-size="12" fill="#a5d6a7">GPIO 25</text>
+
+  <rect x="200" y="225" width="90" height="28" rx="4" fill="#1b5e20"/>
+  <text x="245" y="244" text-anchor="middle" font-size="12" fill="#a5d6a7">GPIO 26</text>
+
+  <rect x="200" y="265" width="90" height="28" rx="4" fill="#1b5e20"/>
+  <text x="245" y="284" text-anchor="middle" font-size="12" fill="#a5d6a7">3.3V</text>
+
+  <rect x="200" y="305" width="90" height="28" rx="4" fill="#1b5e20"/>
+  <text x="245" y="324" text-anchor="middle" font-size="12" fill="#a5d6a7">GND</text>
+
+  <!-- PCM5102A Board -->
+  <rect x="420" y="60" width="240" height="310" rx="10" fill="#4a148c" filter="url(#shadow)"/>
+  <rect x="428" y="68" width="224" height="294" rx="6" fill="#6a1b9a"/>
+  <text x="540" y="100" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">PCM5102A</text>
+  <text x="540" y="120" text-anchor="middle" font-size="11" fill="#e1bee7">24-bit Stereo DAC</text>
+
+  <!-- PCM5102A Pins -->
+  <rect x="430" y="145" width="90" height="28" rx="4" fill="#4a148c"/>
+  <text x="475" y="164" text-anchor="middle" font-size="12" fill="#ce93d8">BCK</text>
+
+  <rect x="430" y="185" width="90" height="28" rx="4" fill="#4a148c"/>
+  <text x="475" y="204" text-anchor="middle" font-size="12" fill="#ce93d8">LCK (LRCK)</text>
+
+  <rect x="430" y="225" width="90" height="28" rx="4" fill="#4a148c"/>
+  <text x="475" y="244" text-anchor="middle" font-size="12" fill="#ce93d8">DIN</text>
+
+  <rect x="430" y="265" width="90" height="28" rx="4" fill="#4a148c"/>
+  <text x="475" y="284" text-anchor="middle" font-size="12" fill="#ce93d8">VCC</text>
+
+  <rect x="430" y="305" width="90" height="28" rx="4" fill="#4a148c"/>
+  <text x="475" y="324" text-anchor="middle" font-size="12" fill="#ce93d8">GND</text>
+
+  <!-- Wires -->
+  <line x1="290" y1="159" x2="430" y2="159" stroke="#4caf50" stroke-width="2.5"/>
+  <text x="360" y="153" text-anchor="middle" font-size="9" fill="#2e7d32" font-weight="600">BCLK</text>
+
+  <line x1="290" y1="199" x2="430" y2="199" stroke="#2196f3" stroke-width="2.5"/>
+  <text x="360" y="193" text-anchor="middle" font-size="9" fill="#0d47a1" font-weight="600">WS / LRCK</text>
+
+  <line x1="290" y1="239" x2="430" y2="239" stroke="#f44336" stroke-width="2.5"/>
+  <text x="360" y="233" text-anchor="middle" font-size="9" fill="#c62828" font-weight="600">DATA OUT</text>
+
+  <line x1="290" y1="279" x2="430" y2="279" stroke="#ff9800" stroke-width="2.5"/>
+  <text x="360" y="273" text-anchor="middle" font-size="9" fill="#e65100" font-weight="600">3.3V</text>
+
+  <line x1="290" y1="319" x2="430" y2="319" stroke="#757575" stroke-width="2.5"/>
+  <text x="360" y="313" text-anchor="middle" font-size="9" fill="#424242" font-weight="600">GND</text>
+
+  <!-- Signal direction arrows -->
+  <polygon points="425,155 415,159 425,163" fill="#4caf50"/>
+  <polygon points="425,195 415,199 425,203" fill="#2196f3"/>
+  <polygon points="425,235 415,239 425,243" fill="#f44336"/>
+  <polygon points="425,275 415,279 425,283" fill="#ff9800"/>
+  <polygon points="425,315 415,319 425,323" fill="#757575"/>
+
+  <!-- Config Pins Section -->
+  <rect x="130" y="395" width="460" height="90" rx="8" fill="#fff3e0" stroke="#ff9800" stroke-width="1.5"/>
+  <text x="360" y="418" text-anchor="middle" font-size="13" font-weight="700" fill="#e65100">PCM5102A Configuration Pins</text>
+
+  <text x="155" y="442" font-size="11" fill="#424242"><tspan font-weight="600">FMT</tspan> &#x2192; GND (I2S)</text>
+  <text x="155" y="462" font-size="11" fill="#424242"><tspan font-weight="600">SCK</tspan> &#x2192; GND (internal clock)</text>
+  <text x="370" y="442" font-size="11" fill="#424242"><tspan font-weight="600">XSMT</tspan> &#x2192; 3.3V (unmuted)</text>
+  <text x="370" y="462" font-size="11" fill="#424242"><tspan font-weight="600">DEMP</tspan> &#x2192; GND  |  <tspan font-weight="600">FLT</tspan> &#x2192; GND</text>
+
+  <!-- Legend -->
+  <text x="360" y="378" text-anchor="middle" font-size="11" fill="#616161">I2S Philips Format  |  48 kHz  |  No MCLK required  |  APLL Clock Source</text>
+</svg>
