@@ -4,6 +4,14 @@ Wireless audio receiver built on the ESP32. Receives IMA ADPCM audio packets ove
 
 ---
 
+## Architecture
+
+<p align="center">
+  <img src="docs/images/architecture.svg" alt="System Architecture" width="800" />
+</p>
+
+---
+
 ## Overview
 
 This is the receiving half of a wireless audio link. The sink listens for broadcast ESP-NOW packets from the source, decodes the IMA ADPCM payload back to 24-bit PCM, applies gain and soft limiting, and writes the result to a PCM5102A DAC over I2S in real-time.
@@ -36,6 +44,10 @@ The whole pipeline is built around low latency. Blocking I2S writes act as the t
 - **PCM5102A DAC module** -- stereo 24-bit audio DAC, I2S input
 
 ### Wiring
+
+<p align="center">
+  <img src="docs/images/wiring.svg" alt="ESP32 to PCM5102A Wiring" width="700" />
+</p>
 
 | PCM5102A Pin | ESP32 GPIO | Function         |
 |--------------|------------|------------------|
