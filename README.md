@@ -35,10 +35,6 @@ The whole pipeline is built around low latency. Blocking I2S writes act as the t
 - **ESP32 dev board** (dual-core, any variant with enough GPIOs)
 - **PCM5102A DAC module** -- stereo 24-bit audio DAC, I2S input
 
-<p align="center">
-  <img src="docs/images/pcm5102a.jpg" alt="PCM5102A DAC module" width="300"/>
-</p>
-
 ### Wiring
 
 | PCM5102A Pin | ESP32 GPIO | Function         |
@@ -89,7 +85,7 @@ On Windows with PowerShell:
 ```powershell
 D:\esp-idf\export.ps1
 idf.py build
-idf.py -p COM10 flash monitor
+idf.py -p COMXX flash monitor
 ```
 
 ---
